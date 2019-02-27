@@ -6,6 +6,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 public class LoginPage {
 	
@@ -22,12 +23,15 @@ public class LoginPage {
     
   
     @AndroidFindBy(id = "email")
+    @iOSFindBy(id = "email")
     private AndroidElement emailInput;
     
     @AndroidFindBy(id = "pass")
+    @iOSFindBy(id = "pass")
     private AndroidElement passwordInput;
     
     @AndroidFindBy(id = "loginbutton")
+    @iOSFindBy(id = "loginbutton")
     private AndroidElement loginBtn;
     
     public boolean isDisplayed() {
